@@ -80,3 +80,16 @@ Traceback (most recent call last):
 IndexError: Cannot choose from an empty sequence
 [22532] Failed to execute script 'main' due to unhandled exception!
 ```
+
+## Update
+
+This branch contains the wordlists and the package script does an extra step to copy the missing .txt files to the expected location. 
+It also does not use the --onefile option for PyInstaller in order to work. The exe will be located in a subfolder inside the dist folder. 
+So you have to run 
+```
+cd dist\RandomNameGenerator
+```
+and then 
+```
+.\RandomNameGenerator.exe
+```
